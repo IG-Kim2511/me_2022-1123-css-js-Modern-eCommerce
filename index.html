@@ -23,8 +23,77 @@
 </head>
 <body>
 
+    <!-- 🍚 data-overlay 👉js -->
+    <div class="overlay" data-overlay></div>
     
-    
+      <!--
+        - MODAL
+    -->
+
+        <!-- 🍚 data-modal 👉js-->
+    <div class="modal" data-modal>
+
+
+    <!-- 🍚 data-modal-overlay 👉js-->
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+
+        <div class="modal-content">
+
+            <button class="modal-close-overlay" data-modal-overlay>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="nesletter-img">
+
+                <!-- 🍚 img안에 width, heigt 넣어서 쉽게 코딩 -->
+                <img src="./images/newsletter.png" alt="" width="400" height="400">
+            </div>
+
+            <div class="newsletter">
+             
+                <form action="#">
+                    <div class="newsletter-header">
+                        <h3 class="nesletter-title">subscribe</h3>
+                        <p class="newletter-desc">
+                            subscribe <b>IG kim</b> to get latest products
+                        </p>
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="email address" required >
+                    <button type="submit" class="btn-newletter">subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
     <script src="./main.js"></script>
 </body>
 </html>
