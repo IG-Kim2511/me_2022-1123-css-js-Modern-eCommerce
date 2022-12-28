@@ -32,9 +32,14 @@
  */
 
 
-    'use strict';
+'use strict';
 
 // modal variables
 const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
 const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
+
+console.log('hi')
+
+// 🍀코딩용... 자동으로 가장 밑으로 스크롤시키기
+// window.scrollBy(0, window.innerHeight);
