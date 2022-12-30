@@ -29,10 +29,14 @@
 
     🍚🍚🍚(🦄🦄🦄)c7 ~~~~~ : 정식으로 정리한것
     🍚(🦄)c7  : 다른파일에 체크한것
- */
+*/
 
 
 'use strict';
+
+// 🍀코딩용... 자동으로 가장 밑으로 스크롤시키기
+// window.scrollBy(0, window.innerHeight);
+
 
 // modal variables
 const modal = document.querySelector('[data-modal]');
@@ -41,5 +45,10 @@ const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 
 console.log('hi')
 
-// 🍀코딩용... 자동으로 가장 밑으로 스크롤시키기
-// window.scrollBy(0, window.innerHeight);
+const  modalCloseFunc = function () {
+    modal.classList.add('closed')
+    
+}
+
+modalCloseOverlay.addEventListener('click',modalCloseFunc);
+modalCloseBtn.addEventListener('click',modalCloseFunc);
